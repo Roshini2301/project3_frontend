@@ -1,0 +1,75 @@
+/* Make sure the navbar spans the full width and is at the top */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 30px; /* Adjust padding for desired navbar height */
+    color: white;
+    width: 100%;  /* Ensure it spans the full width of the page */
+    position: fixed; /* Fixed navbar to stay at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Make sure it stays on top of other content */
+  }
+  
+  /* Logo styling */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-logo-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .navbar-logo-link:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Navbar links styling */
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove background, padding, and borders from list items */
+  .navbar-links li {
+    margin: 0 20px; /* Space between the links */
+    padding: 0; /* Ensure no padding */
+    background: none; /* Remove any background color */
+    border: none;
+    margin-right:100px; /* Remove any border if applied */
+  }
+  
+  /* Style the links inside navbar */
+  .navbar-link {
+    color: white;
+    text-decoration: none; /* Ensure no underline by default */
+    font-size: 18px;
+    background: none; /* Remove background */
+    padding: 0; /* No extra padding around the link */
+  }
+  
+  /* Hover state */
+  .navbar-link:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
+  
+  /* Active link highlighting */
+  .navbar-link.active {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Add padding to body content to ensure it doesn't overlap with the navbar */
+  body {
+    margin-top: 60px; /* This is the height of the navbar */
+  }
+  
+  

@@ -1,0 +1,526 @@
+/* src/styles/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  font-family: Arial, sans-serif;
+}
+.main-content {
+  flex: 1; /* This makes the content take up the rest of the screen */
+  padding: 20px;
+  overflow-y: auto; /* Scrollable content if necessary */
+}
+/* App.css */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-background {
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input, textarea {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+h1{
+  margin-left:300px;
+  margin-right:300px;
+}
+.profile-container h2{
+  color:white;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+/* Add custom styles for the paragraph in Home.js */
+.Home p
+{
+  margin-left:410px;
+}
+.Home h4{
+  margin-right: 500px;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+   min-height: 100vh; 
+   min-width: 250vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  color: #ffffff;
+  margin-left:650px;
+  width:100%;
+  height:100%;
+  background: url('https://i.pinimg.com/474x/7a/86/99/7a8699d34f1e87cd1b3160431c2a6b31.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+.profile-card {
+  background: #302f2f96;
+  padding: 2em;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  height: 320px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(rgb(51, 34, 167), rgb(8, 182, 80), rgb(182, 12, 145)) 1;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px pink, 0px 0px 25px rgb(3, 195, 253);
+}
+
+.profile-card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  animation: rainbow 3s infinite ease;
+}
+
+.profile-card p {
+  font-size: 1.2rem;
+}
+/* src/pages/Home.css */
+
+/* Full-page background styling */
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: url('https://i.pinimg.com/736x/1f/e1/9b/1fe19ba5e84bf2256457cbd68091c4cc.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading styling */
+.Home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+  max-width: 90%;
+}
+
+/* Paragraph styling */
+.Home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Link styling */
+.Home a {
+  text-decoration: none;
+}
+
+.Home h4 {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right:100px;
+}
+
+.Home h4:hover {
+  background-color: #f1f1f1;
+  color: #2575fc; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+@media (max-width: 768px) {
+  /* Reduce heading size for tablets and smaller screens */
+  .Home h1 {
+    font-size: 2rem;
+  }
+
+  /* Adjust paragraph font size */
+  .Home p {
+    font-size: 1rem;
+    max-width: 80%; /* Adjust paragraph width */
+  }
+
+  /* Adjust link size for smaller screens */
+  .Home h4 {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce heading size for mobile screens */
+  .Home h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Further adjust paragraph font size */
+  .Home p {
+    font-size: 0.9rem;
+    max-width: 90%; /* Max width of paragraph */
+  }
+
+  /* Further adjust link size */
+  .Home h4 {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+}
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background: url('https://i.pinimg.com/736x/e0/31/5c/e0315ca4f5486309dab9abd538ce9d06.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width:1500px;
+}
+
+.login-box {
+  /* Ensures the background covers the entire box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.login-box h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white; /* Ensure the text is readable on the background */
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+/* dashboard.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.meeting-list {
+  list-style: none;
+  padding: 0;
+}
+
+.meeting-list li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.home-container {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  max-width: 1500px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.dashboard-container {
+  width: 1500px;  /* Adjust width */
+  height: 1000px; /* Adjust height */
+  background: rgba(165, 52, 222, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dashboard-container{
+  background: url('https://i.pinimg.com/736x/12/19/4c/12194c5c011f5057b7cddcc5f82095a4.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.custom-heading {
+  color: #d42abd; /* Replace with your preferred color */
+}
+/* App.css */
+
+/* Body Background */
+body {
+  background-image: url('https://i.pinimg.com/736x/97/c8/4a/97c84ae483b45d46f58c0e79e0a70f5a.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  height: 100vh; /* Ensures the body takes up full height */
+  margin: 0; /* Removes default margin */
+}
+
+/* Main container */
+.login-container {
+  background-image: url('https://i.pinimg.com/736x/31/83/6e/31836e54bcb464296d9bd86fb3c5cd32.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed;
+  width: 600px;
+  margin-top:200px;
+  margin-bottom:300px;
+  margin: 0 auto;
+  height: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9; /* Optional: Makes the container slightly transparent to let the background show through */
+}
+
+/* Heading */
+.login-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input container */
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+/* General container for the whole page */
+.virtual-meeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:1500px;
+  background-image: url('https://i.pinimg.com/736x/f8/0c/cf/f80ccf1c83dae2b32527037eab6cdca7.jpg'); /* Add your background image URL here */
+  background-size: cover;  /* Ensures the image covers the entire container */
+  background-position: center;  /* Centers the background image */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main meeting container */
+.meeting-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input container to handle each input field */
+.input-container {
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the select dropdown */
+select.input-field {
+  cursor: pointer;
+}
+
+/* Toast Notifications */
+.Toastify__toast--info {
+  background-color: #5bc0de;
+}
+
+
+
+
+
+
+
+
